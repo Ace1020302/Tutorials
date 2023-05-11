@@ -39,6 +39,7 @@ def main():
     x = 5
     while (x < 10):
         print(x)
+        x += 1
 
     # Sum is reset again
     sum = 0

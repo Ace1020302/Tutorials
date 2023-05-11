@@ -13,13 +13,19 @@ def main():
     randNum = randint(0, 100)
 
     textInput = True
-    while(textInput != randNum):
+    numInput = -1
+    guess = 0
+    while(numInput != randNum):
         textInput = input("What's your guess? ")
-        if(randNum < textInput):
+        numInput = int(textInput)
+        guess += 1
+        if(randNum < numInput):
+            print("Lower")
+        elif(randNum > numInput):
             print("Higher")
         else:
-            print("Lower")
-    print("You win!")
+            break # Breaks the current loop completely.
+    print(f"It took you {guess} guesses to win!")
         
         
 
