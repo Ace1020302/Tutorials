@@ -38,6 +38,17 @@ def main():
         # <, <=   ->   Checks if right value is higher than left. Returns true if so.
         # or  -> OR operator    Checks if either condition around it is true (if so, then returns true)
         # and  -> AND operator   Checks if both conditions around it are true (if so, then returns false)
+
+        # Conditions have a presendence, that is, an order of operations
+        # (...) are first, then not's, then the expression operators (<,>,==,!=), then the and's and or's.
+        
+        # Practice
+        # ( 1 < x ) || not ( active ) 
+        #  where active = True and x = 5
+        # evaluates to ?
+        # 
+
+
     brotherAge = 10
     sisterAge = 20
     if(brotherAge != sisterAge):
